@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 102vh;
+  margin: 0;
+  background-color: #703e3e; /* Dark red */
+  font-family: 'Roboto', sans-serif;
+}
+
+.todo-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 50px;
+  border: 1px solid #e99292; /* Light red */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: hsl(0, 32%, 60%); /* Light red background */
+}
+
+h1 {
+  text-align: center;
+  color: #333; /* Dark gray */
+}
+
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5c5151; /* Dark red */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-input button:hover {
+  background-color: #570f0f; /* Darker red on hover */
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid hsl(0, 23%, 55%); /* Darker gray border */
+  border-radius: 4px;
+  background-color: #c99f9f; /* Light red */
+  transition: background-color 0.3s;
+}
+
+.task.completed {
+  background-color: #985348; /* Darker red for completed tasks */
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+  transform: scale(2.5);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.edit-btn {
+  background-color: #2196f3; /* Blue for edit button */
+  color: white;
+}
+
+button.edit-btn:hover {
+  background-color: #1e88e5; /* Darker blue on hover */
+}
+
+button.delete-btn {
+  background-color: #f44336; /* Red for delete button */
+  color: white;
+}
+
+button.delete-btn:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
